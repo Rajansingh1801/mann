@@ -1,0 +1,37 @@
+.sidebar{height:calc(100vh - 70px); overflow-Y: scroll; 
+    .sidebarc{
+        ul{ 
+            li{padding: 15px 0px; display: flex; align-items: center; font-size: 18px; font-weight: 400;}
+           
+                i{margin: 0px 7px;}
+            
+        }
+        button{padding: 8px 30px; border: none; background-color: brown; color: white; }
+    }
+    .friendlist{
+        ul{
+            li{display: flex; align-items: center;}
+            img{width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;}
+        }
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; }
