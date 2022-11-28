@@ -12,20 +12,20 @@ function Share() {
                 <div className="shareitem">
                     <ul className="d-flex justify-content-between align-items-center">
                         <li>
-                            <i class="ph-google-photos-logo-bold"></i>
+                            <i className="ph-google-photos-logo-bold"></i>
                             <span>Photo or Video</span>
                         </li>
                         <li>
-                            <i class="ph-tag-bold"></i>
+                            <i className="ph-tag-bold"></i>
                             <span>tag</span>
                         </li>
                         <li>
-                            <i class="ph-map-pin-bold"> </i>
+                            <i className="ph-map-pin-bold"> </i>
                                 <span>Loaction</span>
                            
                         </li>
                         <li>
-                            <i class="ph-smiley-bold"> </i>
+                            <i className="ph-smiley-bold"> </i>
                                 <span>feeling</span>
                            
                         </li>
