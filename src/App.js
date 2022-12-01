@@ -1,14 +1,15 @@
-import './App.css';
+import "./App.css";
 
-import "./css/Universal-style.css"
-import Home from './pages/home/home';
+import "./css/Universal-style.css";
+
+import Router from "./router";
 
 function App() {
-  return (
-    <>
-     <Home/>
-    </>
-  );
+    return (
+        <>
+            <Router />
+        </>
+    );
 }
 
 export default App;

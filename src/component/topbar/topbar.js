@@ -1,9 +1,11 @@
 import React from "react";
 import "./topbar.scss";
+import { Link } from "react-router-dom";
+// import "../../router"
 function Topbar() {
     return (
         <>
-            <div className="container px-3 d-flex py-0_5 align-items-center">
+            <div className="container topbar px-3 d-flex py-0_5 align-items-center">
                 <div className="leftcontainer flex-3">
                     <h1>Mera Mann</h1>
                 </div>
@@ -41,7 +43,9 @@ function Topbar() {
                         </div>
                         <div>
                             <div>
-                                <img src={require("../../asset/images/shivg.jpg")} alt="" className="img-fluid" />
+                                <Link to="/profile">
+                                    <img src={require("../../asset/images/shivg.jpg")} alt="" className="img-fluid" />
+                                </Link>
                             </div>
                         </div>
                     </div>

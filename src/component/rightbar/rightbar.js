@@ -1,4 +1,5 @@
 import React from "react";
+import Onlinefrnd from "../onlinefrnd/onlinefrnd";
 import "./rightbar.scss";
 
 function Rightbar() {
@@ -16,46 +17,7 @@ function Rightbar() {
                         <img src={require("../../asset/images/birth.jpg")} alt="" />
                     </div>
                 </div>
-                <div className="online">
-                    <h3>Online frinds</h3>
-                    <div className="frndlist py-1 ">
-                        <div className="d-flex align-items-center pt-1">
-                            <div className="position-relative">
-                                <img src={require("../../asset/images/person/abdl.png")} alt="" className="position-relative" />
-                                <p className="online-icon position-absolute"></p>
-                            </div>
-                            <h4 className="ps-1">Abdul Kadir</h4>
-                        </div>
-                        <div className="d-flex align-items-center pt-1">
-                            <div className="position-relative">
-                                <img src={require("../../asset/images/person/kun.png")} alt="" className="position-relative" />
-                                <p className="online-icon position-absolute"></p>
-                            </div>
-                            <h4 className="ps-1">Kundan Bashin</h4>
-                        </div>
-                        <div className="d-flex align-items-center pt-1">
-                            <div className="position-relative">
-                                <img src={require("../../asset/images/person/princ.png")} alt="" className="position-relative" />
-                                <p className="online-icon position-absolute"></p>
-                            </div>
-                            <h4 className="ps-1">Prince Rajnhar</h4>
-                        </div>
-                        <div className="d-flex align-items-center pt-1">
-                            <div className="position-relative">
-                                <img src={require("../../asset/images/person/rajt.png")} alt="" className="position-relative" />
-                                <p className="online-icon position-absolute"></p>
-                            </div>
-                            <h4 className="ps-1">Rajat Mehta</h4>
-                        </div>
-                        <div className="d-flex align-items-center pt-1">
-                            <div className="position-relative">
-                                <img src={require("../../asset/images/person/raju.png")} alt="" className="position-relative" />
-                                <p className="online-icon position-absolute"></p>
-                            </div>
-                            <h4 className="ps-1">Raju Ranjan</h4>
-                        </div>
-                    </div>
-                </div>
+                <Onlinefrnd/>
             </div>
         </div>
     );

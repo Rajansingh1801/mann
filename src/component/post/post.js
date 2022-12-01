@@ -1,9 +1,24 @@
 
-import React from "react";
+import React, { useState } from "react";
 import "./post.scss";
 
 function Post({post, user}) {
    
+const[like,setlike]=useState(post.like)
+const[islike,setislike]=useState(false)
+
+const likeEvent = () =>{
+    if(!islike){
+        setlike(like+1);
+    }
+    else{
+        setlike(like-1);    
+    } 
+    setislike(!islike)
+    // setlike(islike?like-1:like+1)
+    // setislike(!islike)
+
+}
     return (
         <>
             <div className="post_container">
@@ -29,8 +44,8 @@ function Post({post, user}) {
                     <div className="post-footer">
                         <div className="d-flex justify-content-between align-items-center">
                             <div className="d-flex align-items-center">
-                                <i className="ph-heart-straight-break-bold"></i>
-                                <p className="ps-1">{post.like} People Like it</p>
+                                <i className="ph-heart-straight-break-bold" onClick={likeEvent}></i>
+                                <p className="ps-1">{like} People Like it</p>
                             </div>
                             <div>
                                 <p className="comment">{post.Comment} comments</p>
