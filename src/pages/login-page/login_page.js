@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./login_page.scss";
 import { Link } from "react-router-dom";
+import Inputfield from "../../component/input/input";
 function Login_page() {
+    const [inputvalue, setinputvalue] = useState({ email: "", password: "" });
+
+    const submitform = (e) => {
+        e.preventDefault();
+        console.log(inputvalue);
+    };
+
     return (
         <div>
-            <div className="login ">
+            <div className="login">
                 <div className="container">
                     <div className="d-flex align-items-center">
                         <div className="flex-6">
                             <div className="d-flex justify-content-center">
                                 <div>
                                     <h1 className="text-center">Mera Mann</h1>
-                                    <form action="" method="post">
+                                    <form action="" method="">
                                         <div>
-                                            <input type="text" name="username" id="" placeholder="Enter Your Username" required className="my-1" /> <br />
-                                            <input type="password" name="password" id="" placeholder="Enter Your Password" className="my-1" />
+                                            <Inputfield onChange={(event) => setinputvalue((prev) => ({ ...prev, name: event.target.value }))} name="Email" value={inputvalue.name} type="email" placeholder="Enter Your Email id" className="my-1" required /> <br />
+                                            <Inputfield onChange={(event) => setinputvalue((prev) => ({ ...prev, password: event.target.value }))} type="password" value={inputvalue.password} name="password" placeholder="Enter Your Password" className="my-1" required />
                                             <div>
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <input type="submit" value="submit" name="" id="" className="my-1" />
+                                                    <input onClick={submitform} type="submit" value="submit" className="my-1" />
                                                     <button>
                                                         <Link to="/reg">Signup</Link>
                                                     </button>
