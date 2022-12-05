@@ -3,6 +3,7 @@
     width: 100%;
     overflow: hidden;
     height: 100vh;
+
     h1 {
         font-family: cursive;
         font-size: 50px;
@@ -31,7 +32,7 @@
         color: white;
         font-weight: 700;
         border: 3px solid white;
-        padding: 15px 30px;
+        padding: 13px 30px;
     }
     button a {
         color: white;
@@ -42,4 +43,13 @@
         height: 100vh;
         object-fit: cover;
     }
+}
+
+.form-body {
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(240, 248, 255, 0.1);
+    // border: 1px solid black;
+    width: fit-content;
 }

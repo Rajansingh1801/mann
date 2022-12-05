@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import "./login_page.scss";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { auth } from "../../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import Inputfield from "../../component/input/input";
+// import { async } from "@firebase/util";
 function Login_page() {
+    const history = useHistory(); //it is used to redirect the page to login form
     const [inputvalue, setinputvalue] = useState({ email: "", password: "" });
+    const [errMess, setErrMess] = useState(""); // it is used to print the error message
+    const [disablebtn, setdisablebtn] = useState(false); // it make btn disbled after click
 
     let name, value;
     const getUserData = (event) => {
@@ -15,6 +21,23 @@ function Login_page() {
     const submitform = (e) => {
         e.preventDefault();
         console.log(inputvalue);
+        if (!inputvalue.email || !inputvalue.password) {
+            setErrMess("fill all field");
+            return; //it check weather all field is completed or not
+        }
+        setErrMess("");
+        setdisablebtn(true);
+        signInWithEmailAndPassword(auth, inputvalue.email, inputvalue.password)
+            .then((res) => {
+                setdisablebtn(false);
+                console.log(res);
+                history.push("/home"); //here we redirect the page
+            })
+            .catch((err) => {
+                setdisablebtn(false);
+                setErrMess(err.message);
+                // console.log("error-", err.message);
+            });
     };
 
     return (
@@ -23,18 +46,21 @@ function Login_page() {
                 <div className="container">
                     <div className="d-flex align-items-center">
                         <div className="flex-6">
-                            <div className="d-flex justify-content-center">
+                            <div className="d-flex justify-content-center form-body">
                                 <div>
-                                    <h1 className="text-center">Mera Mann</h1>
+                                    <h1 className="text-center">Login</h1>
                                     <form action="" method="">
                                         <div>
                                             <Inputfield name="email" onChange={getUserData} value={inputvalue.name} type="email" placeholder="Enter Your Email id" className="my-1" required /> <br />
                                             <Inputfield type="password" onChange={getUserData} value={inputvalue.password} name="password" placeholder="Enter Your Password" className="my-1" required />
                                             <div>
+                                                <p className="error text-center fw-700 mt-2 mb-1">{errMess}</p>
                                                 <div className="d-flex justify-content-center align-items-center">
-                                                    <input onClick={submitform} type="submit" value="submit" className="my-1" />
+                                                    <input onClick={submitform} disabled={disablebtn} type="submit" value="submit" className="my-1" />
                                                     <button>
-                                                        <Link to="/reg">Signup</Link>
+                                                        <Link to="/reg" className="w-100 h-100">
+                                                            Signup
+                                                        </Link>
                                                     </button>
                                                 </div>
                                             </div>
