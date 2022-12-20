@@ -1,0 +1,57 @@
+.signup {
+  background-color: aliceblue !important;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  padding: 150px;
+}
+.signup form {
+  padding: 50px;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgb(249, 223, 223);
+}
+.signup form input {
+  height: 50px;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+  margin: 0px 15px;
+}
+.signup form input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: darkblue;
+  color: white;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 10px 30px;
+}
+.signup form input[type=submit]:disabled {
+  background-color: gray !important;
+}
+.signup button {
+  background-color: rgb(132, 132, 68);
+  color: white;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 15px 30px;
+}
+.signup button a {
+  color: rgb(245, 243, 243);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+h3 {
+  color: brown;
+  font-size: 36px;
+}
+
+.error {
+  color: red;
+}/*# sourceMappingURL=reg.css.map */

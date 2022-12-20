@@ -18,7 +18,9 @@ function Topbar() {
                 <div className="rightcontainer flex-4">
                     <div className="d-flex justify-content-evenly align-items-center">
                         <div className="d-flex justify-content-between align-items-center text-white">
-                            <h4 className="pe-1">Home Page</h4>
+                            <Link to="/home">
+                                <h4 className="pe-1">Home Page</h4>
+                            </Link>
                             <h4>TimeLine</h4>
                         </div>
                         <div>

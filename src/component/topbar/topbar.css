@@ -1,0 +1,35 @@
+.topbar {
+  background-color: #1777f2;
+}
+.topbar .leftcontainer h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  font-family: "Lora", serif;
+}
+.topbar .centercontainer .inputdiv {
+  height: 40px;
+  background-color: white;
+  border-radius: 50px;
+}
+.topbar .centercontainer input {
+  width: 100%;
+  height: 100%;
+}
+.topbar .rightcontainer ul li .count {
+  top: -10px;
+  left: 8px;
+  padding: 3px 6px;
+  border-radius: 50%;
+  background-color: crimson;
+  color: white;
+  font-size: 8px;
+}
+.topbar .rightcontainer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.topbar .rightcontainer a h4 {
+  color: white;
+}/*# sourceMappingURL=topbar.css.map */

@@ -1,0 +1,58 @@
+.login {
+  background-color: aliceblue !important;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+.login h1 {
+  font-family: cursive;
+  font-size: 50px;
+  filter: drop-shadow(0px 0px 10px) rgb(217, 62, 62);
+}
+.login input {
+  height: 50px;
+  width: 400px;
+  padding: 10px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
+.login input[type=submit] {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: darkblue;
+  color: white;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 10px 30px;
+}
+.login button {
+  background-color: darkblue;
+  color: white;
+  font-weight: 700;
+  border: 3px solid white;
+  padding: 13px 30px;
+}
+.login button a {
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+.login img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form-body {
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(240, 248, 255, 0.1);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}/*# sourceMappingURL=login_page.css.map */

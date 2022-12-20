@@ -1,0 +1,15 @@
+.online .frndlist img {
+  width: 50px;
+  height: 50px;
+  border: 50%;
+  border-radius: 50%;
+}
+.online .frndlist .online-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  border: none;
+  top: 0px;
+  right: 2px;
+}/*# sourceMappingURL=onlinefrnd.css.map */

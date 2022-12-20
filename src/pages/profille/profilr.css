@@ -1,0 +1,19 @@
+.profileRightTop .coverImg {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.profileRightTop .profileImg {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  right: 0%;
+  left: 0%;
+  top: 225px;
+  border: 3px solid white;
+  border-radius: 50%;
+}/*# sourceMappingURL=profilr.css.map */

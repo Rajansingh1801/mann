@@ -21,6 +21,7 @@ function Login_page() {
     const submitform = (e) => {
         e.preventDefault();
         console.log(inputvalue);
+
         if (!inputvalue.email || !inputvalue.password) {
             setErrMess("fill all field");
             return; //it check weather all field is completed or not
