@@ -11,7 +11,7 @@ function Router() {
             <Switch>
                 {
                     <>
-                        <Route path="/" exact component={Home} />
+                        <Route path="/" exact component={Login_page} />
                         <Route path="/login" exact component={Login_page} />
                         <Route path="/reg" exact component={Reg} />
                         <Route path="/home" exact component={Home} />
