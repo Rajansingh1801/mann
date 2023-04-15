@@ -66,9 +66,7 @@ function Login_page() {
                                                     </button>
                                                 </div>
                                                 <div className="apkbtn">
-                                                    <a href={apk}>
-                                                        <Button>downlaod apk</Button>
-                                                    </a>
+                                                    <a href={apk}>downlaod apk</a>
                                                 </div>
                                             </div>
                                         </div>

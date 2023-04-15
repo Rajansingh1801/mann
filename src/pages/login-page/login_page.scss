@@ -53,10 +53,10 @@
     // border: 1px solid black;
     width: fit-content;
 }
-.apkbtn a button {
-    background-color: gold;
+.apkbtn a {
     padding: 5px 10px;
-    display: flex;
-    justify-content: end;
+    text-align: end;
     color: blue;
+    align-self: flex-end;
+    display: flex;
 }
