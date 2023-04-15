@@ -22,7 +22,6 @@
   margin: 0px 15px;
 }
 .signup form input[type=submit] {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: darkblue;

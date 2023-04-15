@@ -4,6 +4,8 @@ import { Link, useHistory } from "react-router-dom";
 import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import Inputfield from "../../component/input/input";
+import { Button } from "@mui/material";
+import apk from "../../asset/mera-mann.apk";
 // import { async } from "@firebase/util";
 function Login_page() {
     const history = useHistory(); //it is used to redirect the page to login form
@@ -40,7 +42,6 @@ function Login_page() {
                 // console.log("error-", err.message);
             });
     };
-
     return (
         <div>
             <div className="login">
@@ -63,6 +64,11 @@ function Login_page() {
                                                             Signup
                                                         </Link>
                                                     </button>
+                                                </div>
+                                                <div className="apkbtn">
+                                                    <a href={apk}>
+                                                        <Button>downlaod apk</Button>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
