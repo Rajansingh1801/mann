@@ -56,6 +56,9 @@
 }
 
 .apkbtn a button {
-  background-color: none !important;
-  color: green;
+  background-color: gold;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: end;
+  color: blue;
 }/*# sourceMappingURL=login_page.css.map */
